@@ -1,83 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="resume.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <link href="projects.css" rel="stylesheet">
 </head>
+
 <body>
-    
-    <h1>Yesha Karyle A. Takeng</h1>
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" >My-Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Info:</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#featured-3">Home</a>
+              </li>
+            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./My-Resume-main/index.html">Resume</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Contacts
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100092242770108&sk=friends_mutual"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg> Facebook</li>
+                  <li><a class="dropdown-item" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fyesha_karyle%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExdFdVMW1CcWdzNnl3S0hmMwEePSA-aqZWxBywubamcoLQWrhiAy7ECWmd6ZYlNK_6BDb86N94uVC9ggyaAQ0_aem_QCAiwx2wik6NDbYOPE5r7w&h=AT0CSTYRRZERYxoALUxf302VUwe2EKdU5z2VuGBxbrikMmHdQ-QyuAyW9SgvJA-D-lCivTJXVnCZcAvd2oey-Lazl4pO7zBJbbtgt7dUVYKG_7-vCm4bAPDjs0KWT3Ziw8U3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                  </svg> 09609040811</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="yshiagdawitakeng@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg> yshiagdawitakeng@gmail.com</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-    <img src="Profile_pic.jpg" width="250px" alt="My Profile Picture ">
-
-    <hr>
-
-    <h2>Summary</h2>
-
-    <p>
-        <ul>
-            <li>I am passionate about staying up-to-date with industry trends and best practices, continuously seeking opportunities to expand 
-                my knowledge and skills. My commitment to innovation and excellence makes me a valuable asset to any team, and I am excited to bring
-                 my expertise to a new challenge.</li>
-        </ul>
-    </p>
-
-    <hr>
-    
-    <h2>Education</h2>
-
-        <ul>
-            <li>Bachelor of Information Technology in KCP(Kings College of the Philippines)</li>
-        </ul>
-    
-    <hr>
-
-    <h2>Work Experience </h2>
-
-    
-    <ul>
-            <li>  <h3>Freelance Web Developer </h3>
-  
-                <ol>
-                     <li> Assisted in website maintenance and updates for small projects.</li>
-                    <li> Practiced responsive web design to improve user experience.</li>
-                </ol>
-
-            </li>
+  <!-- Hero Section --> 
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Yesha Karyle Takeng.</h1>
+      <p class="lead">I am passionate about staying up-to-date with industry trends and best practices, continuously seeking opportunities to expand my knowledge and skills.</p>
+      <img src="profile_pic.jpg.jpg" alt="profile pic" class="pic" height="400px">
+    </div>
+  </section>
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">About me </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
        
-    </ul>    
-    <hr>
-
-    <h2>Skills</h2>
-
-        <ol>
-            <li>HTML & CSS - Structure and style web pages.</li>
-            <li>JavaScript - Add interactivity and dynamic content.</li>
-            <li>Continuous Learning - Stay updated with new web trends</li>
-        </ol>
-
-    <hr>
-
-    <h3>Awards & Certification</h3>
-
-        <ul>
-            <li> Certificate of complition 
-                <ol> 
-                    <li>Creative Web Desing </li>
-                </ol>
-
-            </li>
-        </ul>
-
-    <hr>
-    
-    <h2>Others</h2>
-
-    <a href="hobbies.html">Hobbies</a> <br> <a href="contact.html">Contact</a>
-
+        <h3 class="fs-2">Who I'm I?</h3>
+        <p> I'm the second daughter of Mr.
+          and Mrs Takeng, I'm also a 2nd year college in Kings with a degree of bachelor of Infomation
+          Technology. 
+          
+        </p>
         
+      </div>
+      <div class="feature col">
+        
+        <h3 class="fs-2">Why BSIT?</h3>
+        <p>The demand for professionals who can bridge the gap between technology and business is high in today’s job market. By 
+          choosing BSIT, I am equipping myself with the skills and knowledge needed to pursue a wide range of career opportunities in 
+          areas such as data analysis, systems management, and business intelligence. </p>
+       
+        </a>
+      </div>
+      <div class="feature col">
+       
+        <h3 class="fs-2">My Goal </h3>
+        <p> My goal in life is to become a rich tita in the future .</p>
+       
+        
+      </div>
+    </div>
+  </div>
 
+
+
+  <!--Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p> Thats all, Thank You.</p>
+  </footer>
 </body>
+
 </html>
